@@ -1,0 +1,33 @@
+package com.simplilearn.calc;
+
+import java.util.Scanner;
+
+public class Calculator {
+	
+	
+	public double add(double a,double b) {
+		System.out.println("enter the ");
+		return a+b;
+	}
+	
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter first number");
+		double num1=scanner.nextDouble();
+		System.out.println("enter second number");
+		double num2=scanner.nextDouble();
+		System.out.println("enter the operator to perform operaion on entered two numbers(+,-,*,/)");
+		String operator= scanner.next();
+		
+		Calculator obj=new Calculator();
+		if (operator == "+")
+			System.out.println("Addition of entered 2 numbers is:"+ obj.add(num1,num2) );
+		
+
+			
+		
+		
+		
+	}
+
+}
